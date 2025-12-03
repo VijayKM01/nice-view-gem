@@ -21,29 +21,29 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: m165437 #new entry
-      url-base: https://github.com/M165437 #new entry
+    - name: nice-view-display-mod #new entry
+      url-base: https://github.com/VijayKM01 #new entry
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: nice-view-gem #new entry
-      remote: m165437 #new entry
+      remote: nice-view-display-mod #new entry
       revision: main #new entry
   self:
     path: config
 ```
 
-Now, simply swap out the default nice_view shield on the board for nice_view_gem in your `build.yaml` file.
+Now, simply swap out the default `nice_view` shield on the board for `nice_view_gem` in your `build.yaml` file.
 
 ```yml
 ---
 include:
   - board: nice_nano_v2
-    shield: kyria_left nice_view_adapter nice_view_gem #updated entry
+    shield: sofle_left nice_view_adapter nice-view-gem-display-mod #updated entry
   - board: nice_nano_v2
-    shield: kyria_right nice_view_adapter nice_view_gem #updated entry
+    shield: sofle_right nice_view_adapter nice-view-gem-display-mod #updated entry
 ```
 
 Finally, make sure to enable the custom status screen in your ZMK configuration:
