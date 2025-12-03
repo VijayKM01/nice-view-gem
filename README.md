@@ -41,9 +41,9 @@ Now, simply swap out the default `nice_view` shield on the board for `nice_view_
 ---
 include:
   - board: nice_nano_v2
-    shield: sofle_left nice_view_adapter nice-view-gem-display-mod #updated entry
+    shield: sofle_left nice_view_adapter nice-view-gem #updated entry
   - board: nice_nano_v2
-    shield: sofle_right nice_view_adapter nice-view-gem-display-mod #updated entry
+    shield: sofle_right nice_view_adapter nice-view-gem #updated entry
 ```
 
 Finally, make sure to enable the custom status screen in your ZMK configuration:
